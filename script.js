@@ -92,3 +92,18 @@ const loop = setInterval(() => {
     pointsEl.innerText = `Pontos: ${points}`;
 
 }, 10);
+
+const endGame = () => {
+    gameRunning = false;
+    gameMusic.pause();
+    gameOverSound.play();
+
+    pipe.style.animation = 'none';
+    turtle.style.animation = 'none';
+
+    mario.src = './images/mario.game_over.png';
+    mario.style.width = '75px';
+
+    restart.style.display = 'block';  
+    clearInterval(loop);
+};
