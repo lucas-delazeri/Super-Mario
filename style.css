@@ -14,12 +14,6 @@
     background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
-.pipe {
-    position: absolute;
-    bottom: 0;
-    width: 80px;
-    animation: pipe-animation 1.5s infinite linear;
-}
 
 @keyframes pipe-animation {
     from {
@@ -29,6 +23,12 @@
         right: 100%;
     }
 }
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+}
 
 .mario {
   width: 150px;
@@ -36,12 +36,21 @@
   bottom: 0;
 }
 
+
+@keyframes turtle-animation {
+    from {
+        right: -400px;
+    }
+    to {
+        right: 100%;
+    }
+}
 .turtle {
     position: absolute;
     animation: turtle-animation 1.5s linear;
 }
 
-@keyframes turtle-animation {
+@keyframes clouds-animation {
     from {
         right: -400px;
     }
@@ -54,24 +63,6 @@
     width: 400px;
     position: absolute;
     animation: clouds-animation 10s infinite linear;
-}
-
-@keyframes clouds-animation {
-    from {
-        right: -400px;
-    }
-    to {
-        right: 100%;
-    }
-}
-
-@keyframes clouds-animation {
-    from {
-        right: -400px;
-    }
-    to {
-        right: 100%;
-    }
 }
 
 @keyframes jump-animation {
@@ -91,7 +82,16 @@
         bottom: 0px;
     }
 }
-
 .jump {
     animation: jump-animation 500ms ease-out;
+}
+
+.points {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    z-index: 10;
 }
