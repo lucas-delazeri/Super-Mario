@@ -116,3 +116,5 @@ document.addEventListener('keydown', e => {
 document.addEventListener('keyup', e => {
     if (e.code === 'KeyS') standUp();
 });
+
+restart.addEventListener('click', () => location.reload());
