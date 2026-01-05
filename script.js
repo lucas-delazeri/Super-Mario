@@ -30,3 +30,9 @@ const isColliding = (a, b) => {
     rectA.top > rectB.bottom
   );
 };
+
+const jump = () => {
+  jumpSound.play();
+  mario.classList.add('jump');
+  setTimeout(() => mario.classList.remove('jump'), 500);
+};
