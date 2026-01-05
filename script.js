@@ -7,3 +7,6 @@ const star = document.querySelector('.star');
 
 let gameRunning = true;
 let points = 0;
+
+const marioCrouch = './images/mario.agachado.png';
+const marioStand = './images/mario.gif';
