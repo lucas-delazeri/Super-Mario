@@ -83,3 +83,6 @@
     }
 }
 
+.jump {
+    animation: jump-animation 500ms ease-out;
+}
