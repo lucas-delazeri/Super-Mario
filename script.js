@@ -46,3 +46,8 @@ const standUp = () => {
     mario.src = marioStand;
     mario.style.width = '150px';
 };
+
+const isPipeNear = () => {
+  const pipePosition = pipe.offsetLeft;
+  return pipePosition > 0 && pipePosition < 250;
+};
