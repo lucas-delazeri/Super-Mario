@@ -13,3 +13,19 @@
     overflow: hidden;
     background: linear-gradient(#87CEEB, #E0F6FF);
 }
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
