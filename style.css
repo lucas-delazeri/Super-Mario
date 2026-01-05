@@ -40,3 +40,12 @@
     position: absolute;
     animation: turtle-animation 1.5s linear;
 }
+
+@keyframes turtle-animation {
+    from {
+        right: -400px;
+    }
+    to {
+        right: 100%;
+    }
+}
