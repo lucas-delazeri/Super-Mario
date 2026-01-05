@@ -55,3 +55,12 @@
     position: absolute;
     animation: clouds-animation 10s infinite linear;
 }
+
+@keyframes clouds-animation {
+    from {
+        right: -400px;
+    }
+    to {
+        right: 100%;
+    }
+}
