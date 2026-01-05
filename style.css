@@ -49,3 +49,9 @@
         right: 100%;
     }
 }
+
+.clouds {
+    width: 400px;
+    position: absolute;
+    animation: clouds-animation 10s infinite linear;
+}
