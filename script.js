@@ -51,3 +51,25 @@ const isPipeNear = () => {
   const pipePosition = pipe.offsetLeft;
   return pipePosition > 0 && pipePosition < 250;
 };
+
+const spawnTurtle = () => {
+    if (!gameRunning) return;
+
+    if (isPipeNear()) {
+        setTimeout(spawnTurtle, 500);
+        return;
+    }
+
+    const heights = [140, 240];
+    turtle.style.bottom = `${heights[Math.floor(Math.random() * heights.length)]}px`;
+    turtle.style.display = 'block';
+
+    turtle.style.animation = 'none';
+    turtle.offsetHeight;
+    turtle.style.animation = 'turtle-animation 1.5s linear';
+
+    setTimeout(() => turtle.style.display = 'none', 1500);
+    setTimeout(spawnTurtle, Math.random() * 3000 + 2000);
+};
+
+setTimeout(spawnTurtle, 2000);
