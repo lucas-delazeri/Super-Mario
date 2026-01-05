@@ -35,3 +35,8 @@
   position: absolute;
   bottom: 0;
 }
+
+.turtle {
+    position: absolute;
+    animation: turtle-animation 1.5s linear;
+}
