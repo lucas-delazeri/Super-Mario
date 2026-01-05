@@ -107,3 +107,12 @@ const endGame = () => {
     restart.style.display = 'block';  
     clearInterval(loop);
 };
+
+document.addEventListener('keydown', e => {
+    if (e.code === 'Space') jump();
+    if (e.code === 'KeyS') crouch();
+});
+
+document.addEventListener('keyup', e => {
+    if (e.code === 'KeyS') standUp();
+});
