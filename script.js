@@ -36,3 +36,13 @@ const jump = () => {
   mario.classList.add('jump');
   setTimeout(() => mario.classList.remove('jump'), 500);
 };
+
+const crouch = () => {
+    mario.src = marioCrouch;
+    mario.style.width = '100px';
+};
+
+const standUp = () => {
+    mario.src = marioStand;
+    mario.style.width = '150px';
+};
