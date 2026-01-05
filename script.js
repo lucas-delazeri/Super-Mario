@@ -73,3 +73,22 @@ const spawnTurtle = () => {
 };
 
 setTimeout(spawnTurtle, 2000);
+
+const loop = setInterval(() => {
+    if (!gameRunning) return;
+
+    const pipePosition = pipe.offsetLeft;
+    const marioPosition = +getComputedStyle(mario).bottom.replace('px', '');
+
+    if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
+        endGame();
+    }
+
+    if (turtle.style.display === 'block' && isColliding(mario, turtle)) {
+        endGame();
+    }
+
+    points++;
+    pointsEl.innerText = `Pontos: ${points}`;
+
+}, 10);
