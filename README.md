@@ -39,3 +39,6 @@ A aplicação foi construída utilizando **js** seguindo boas práticas de organ
   - Áudio com `Audio()`
   - Game loop com `setInterval`
 ---
+
+<img width="1920" height="921" alt="image" src="https://github.com/user-attachments/assets/7e59b3aa-42da-4d24-8a61-447277a377f3" />
+
